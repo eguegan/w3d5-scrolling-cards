@@ -11,9 +11,6 @@ import java.util.ArrayList;
 /**
  * Created by evin on 4/19/16.
  */
-/**
- * Created by evin on 4/19/16.
- */
 public class BasicAdapter extends RecyclerView.Adapter<BasicAdapter.ViewHolder> {
 
     private ArrayList<String> mArrayList;
