@@ -25,15 +25,18 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(mToolbar);
 
         mArrayList = new ArrayList<>();
-        mArrayList.add("Hello");
-        mArrayList.add("World");
-        mArrayList.add("Why");
-        mArrayList.add("Always");
-        mArrayList.add("Me");
+        for (int i = 0; i < 10; i++) {
+            mArrayList.add("Hello");
+            mArrayList.add("World");
+            mArrayList.add("Why");
+            mArrayList.add("Always");
+            mArrayList.add("Me");
+        }
 
         mBasicAdapter = new BasicAdapter(mArrayList);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.a_main_recycler);
+
         mRecyclerView.setAdapter(mBasicAdapter);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         mRecyclerView.addItemDecoration(new SimpleDecorator(10));
