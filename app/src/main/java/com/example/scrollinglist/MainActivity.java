@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView = (RecyclerView) findViewById(R.id.a_main_recycler);
         mRecyclerView.setAdapter(mBasicAdapter);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        mRecyclerView.addItemDecoration(new SimpleDecorator(10));
 
     }
 }
